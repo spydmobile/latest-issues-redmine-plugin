@@ -10,9 +10,9 @@ Installation
 
 2. Make sure your plugin folder name is *latest_issues*
 
-3. Run the plugin migrations +rake db:migrate_plugins+
+3. Run the plugin migrations +rake db:migrate_plugins+ (Some 2.6 users may need to run: rake redmine:plugins NAME=latest_issues RAILS_ENV=production)
 
-4. Restart your Redmine web servers (e.g. mongrel, thin, mod_rails)
+4. Restart your Redmine web servers (e.g. mongrel, thin, mod_rails) (2.6 users may need to use: touch /path/to/redmine/restart.txt)
 
 Plugin should work now.
 
